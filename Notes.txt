@@ -1,0 +1,137 @@
+Variables
+Operators
+Datatypes
+Alert,prompt,confirm
+
+
+Javascript: 
+ => Created by Netscape in 1995
+ => Originally called LiveWire then LiveScript
+ => Developed By Brandon Erich
+
+Js is a synchronous single threaded programming language. 
+
+
+Variables:- It is name given to memory location.
+=>var 
+=>let
+=>const
+
+syntax:-  keyword(var/let/const) variableName = value;
+ex:- var a = 10 || let a=10 || const a =10
+
+var :-
+=> It is keyword to declare Variables.
+=> It can be redeclared and reassigned.
+Ex:-
+var a = 10;
+a=20; //reassign
+var a = 30; //redeclare
+console.log(a);
+
+let:-
+=> It is keyword to declare Variables.
+=> It can be only reassigned.
+let a =10;
+a=30; //reassign
+console.log(a);
+
+const:-
+=> It is keyword to declare Variables.
+=> It cannot be redeclared and reassigned.
+const c = 10;
+console.log(c);
+
+Operators:-
+=>Airthmetic Operators: +,-,*,/,%
+=>Assignment Operator: =
+=>Conditional Operators: <,>,<=,>=,!=,!==,==,===
+=>Logical Operators: & ,||
+
+Loose Equality:- (==)
+If the value is same it will return true
+Example:
+ 3 == "3" true
+
+Strict Equality:- (===)
+Both Value and datatype should be same then only it will return true 
+example: 
+3===3   true
+3==="3" false
+
+
+Window methods/events:-
+Alert:- 
+alert("Click Ok to enter into the website")
+
+Prompt:-
+let result = prompt("Enter your Name")
+console.log(result)
+
+Confirm:-
+let result1= confirm("Are you sure to enter the webiste")
+console.log(result1);
+
+Datatypes:- 
+String,Number,Boolean,Array,Object,Bignint,Symbol,Null,Undefined
+
+TypeOf:-
+To identify the type of the particular variable we use typeof() method.
+syntax: typeof(variableName)
+example: 
+var a = 10
+console.log(typeof(a))
+
+Undefined:- 
+=> If a variable is declared but the value is not assigned,
+then the value of that variable is undefined.
+=> Then the datatype is also undefined.
+Example:-
+let a;
+console.log(a);
+
+Null:- 
+=> Null is a special value that represents empty or unknown values
+=> The type of null will be an object.
+=> It is a known bug in Javascript.
+=> Javascript defines that null is equal to undefined.
+Example:-
+let num = null;
+console.log(num);
+console.log(typeof(num));
+
+
+Array :-
+=>Collection of datatypes
+=>It will be in sequence manner.
+=>Enclosed within []
+=>Index always starts with 0
+=>To print the values inside the array we have use
+arrayname[indexvalue]
+=>To find the length dynamically we have to use
+arrayname.length
+=>To find the last index in an array we have to use
+arrayname.length-1
+
+Example:- 
+var a =[1,2,3,"abc",true]
+
+
+Object:- 
+=>Object is a collection of properties
+=>Object are structured with key value pair
+=>Objects do not have index
+syntax:-
+var/let/const objectname ={
+    keyname:value
+} 
+Example:-
+let person = {
+    firstname:"John",
+    lastname:"Doe",
+    age:35,
+    gender:"Male",
+    phonenumber:9876543210,
+    skills:["Javascript","HTML","CSS","Reactjs"]
+}
+console.log(person);
